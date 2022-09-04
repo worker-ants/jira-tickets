@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "target": "ES2020",
+    "sourceMap": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "allowJs": true,
+    "paths": {
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    //"tsconfig",
+    //"**/*.spec.ts"
+  ]
+}
