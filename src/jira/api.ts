@@ -20,12 +20,13 @@ export class JiraClient {
     });
   }
 
-  async getIssues(startAt = 0, limit = 100): Promise<SearchResultInterface> {
+  async getIssues(
+    jql: string,
+    startAt = 0,
+    limit = 100,
+  ): Promise<SearchResultInterface> {
     const params = {
-      jql: `project = 'CV' 
-      AND type != "Epic" 
-      AND status IN ('To Do','검토','논의중','In Progress') 
-      ORDER BY created DESC`,
+      jql: jql,
       startAt: startAt,
       maxResults: limit,
       fields: ['summary', 'status', 'assignee'],
