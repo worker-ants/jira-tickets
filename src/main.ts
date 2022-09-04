@@ -10,7 +10,7 @@ import { ExcelWriter } from './lib/excel';
     const limit = ENV.CHUNK;
     const issues = [];
 
-    const jql = `project = 'CV' 
+    const jql = `project = '${ENV.PROJECT_PREFIX}' 
       AND type != "Epic" 
       AND status IN ('To Do','검토','논의중','In Progress') 
       ORDER BY created DESC`;

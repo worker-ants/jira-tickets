@@ -6,5 +6,6 @@ export const ENV = {
   JIRA_URL: process.env.JIRA_URL.replace(/\/+$/, ''),
   JIRA_USER: process.env.JIRA_USER,
   JIRA_PASSWORD: process.env.JIRA_PASSWORD,
+  PROJECT_PREFIX: process.env.PROJECT_PREFIX,
   CHUNK: chunk > 0 ? chunk : 100,
 };
